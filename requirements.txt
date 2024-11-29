@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+arabic-reshaper
+beautifulsoup4
+requests
+chardet
+bs4
+csv
+psycopg2
+sqlalchemy
+string
+math
+re
