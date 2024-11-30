@@ -62,16 +62,17 @@ Replace:
 ### Usage
 # 1. Extract Data
 Run the extract.py script to scrape and save Arabic articles to a CSV file:
-   ```bash
-python extract.py
+     ```bash
+     pip install -r requirements.txt
 # 2. Transform Data
 Run the transform.py script to preprocess the scraped articles and generate TF-IDF features:
-   ```bash
-python transform.py
+     ```bash
+     pip install -r requirements.txt
 # 3. Load Data
 Run the load.py script to load the TF-IDF features into PostgreSQL:
-   ```bash
-python load.py
+     ```bash
+     pip install -r requirements.txt
+
 ### File Descriptions
 extract.py: Contains the web scraping logic to extract Arabic articles and save them in Arabic_dataset.csv.
 transform.py: Preprocesses the scraped data and performs TF-IDF vectorization, saving the results in tfidf_features.csv.
