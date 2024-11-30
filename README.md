@@ -59,19 +59,22 @@ Replace:
 <password>: Your PostgreSQL password.
 <database>: The name of the database you created.
 
-### Usage
-# 1. Extract Data
-Run the extract.py script to scrape and save Arabic articles to a CSV file:
+### Steps
+1. Extract Data
+   Run the extract.py script to scrape and save Arabic articles to a CSV file:
+   ```bash
+   python extract.py
+   
+2. Transform Data
+   Run the transform.py script to preprocess the scraped articles and generate TF-IDF features:
      ```bash
-     pip install -r requirements.txt
-# 2. Transform Data
-Run the transform.py script to preprocess the scraped articles and generate TF-IDF features:
+     python transform.py
+3. Load Data
+   Run the load.py script to load the TF-IDF features into PostgreSQL:
+
      ```bash
-     pip install -r requirements.txt
-# 3. Load Data
-Run the load.py script to load the TF-IDF features into PostgreSQL:
-     ```bash
-     pip install -r requirements.txt
+     python load.py
+
 
 ### File Descriptions
 extract.py: Contains the web scraping logic to extract Arabic articles and save them in Arabic_dataset.csv.
