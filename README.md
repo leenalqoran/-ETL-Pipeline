@@ -77,13 +77,13 @@ Replace:
 
 
 ### File Descriptions
-extract.py: Contains the web scraping logic to extract Arabic articles and save them in Arabic_dataset.csv.
-transform.py: Preprocesses the scraped data and performs TF-IDF vectorization, saving the results in tfidf_features.csv.
-load.py: Loads the processed data from tfidf_features.csv into a PostgreSQL database.
+1. extract.py: Contains the web scraping logic to extract Arabic articles and save them in Arabic_dataset.csv.
+2. transform.py: Preprocesses the scraped data and performs TF-IDF vectorization, saving the results in tfidf_features.csv.
+3. load.py: Loads the processed data from tfidf_features.csv into a PostgreSQL database.
 ### Data Pipeline Overview
-Extraction: Web scraping using BeautifulSoup to fetch article titles and content.
-Transformation: Preprocessing text to clean and prepare data for analysis, followed by feature extraction using TfidfVectorizer.
-Loading: Storing the processed data in PostgreSQL for downstream tasks.
+1. Extraction: Web scraping using BeautifulSoup to fetch article titles and content.
+2. Transformation: Preprocessing text to clean and prepare data for analysis, followed by feature extraction using TfidfVectorizer.
+3. Loading: Storing the processed data in PostgreSQL for downstream tasks.
      
      
 
